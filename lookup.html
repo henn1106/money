@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+</head>
+<body>
+<h1>支出查詢</h1>
+
+<input type="radio" name="howlookup" value="thismonth">本月查詢
+<input type="radio" name="howlookup" value="freedate">自選日期<br>
+<input type=date name="" id="startdate">-<input type=date name="" id="finishdate"><br>
+<button id="lookup">查詢</button>	
+<table >	
+	<thead class=accounttings>
+		<tr>
+			<th>類別</th>
+			<th>金額</th>
+			<th>比例</th>
+		</tr>
+		<tr>
+			<th>吃</th>
+			<th id="eatcost"></th>
+			<th id="eatproportion"></th>
+		</tr>
+		<tr>
+			<th>玩</th>
+			<th id="playcost"></th>
+			<th id="playproportion"></th>
+		</tr>
+		<tr>
+			<th>其他</th>
+			<th id="othercost"></th>
+			<th id="otherproportion"></th>
+		</tr>
+		<tr>
+			<th>總計</th>
+			<th id="totalcost">100</th>
+			<th>100%</th>
+		</tr>
+	</thead>
+	<tbody id=accounttingTable>
+		</tbody>
+</table>
+<table class="table">	
+	<thead>
+		<th>日期</th>
+		<th>類別</th>
+		<th>項目</th>
+		<th>金額</th>
+	</thead>
+	<tbody id=accounttingTable>
+	</tbody>
+</table>
+<center><button type="button" class="" onclick='window.location.href="index.html"'>返回</button></center>
+
+<script type="text/javascript" src=js/jquery-1.12.2.min.js></script>
+<script type="text/javascript" src=js/fdb-all.min.js></script>
+<script type="text/javascript" src=js/lookup.js></script>
+</body>
+</html>
